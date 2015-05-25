@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var multiprocess = require('@qnpm/q-multiprocess');
+var qmonitor = require('@qnpm/q-monitor');
+
+var app = require('../app');
+
+// 启动
+app.set('port', process.env.PORT || '3000');
+var opts = {
+  // CPU核数
+  numCPUs: require('os').cpus().length,
+  // 端口
+  port: app.get('port'),
+  // 子进程收到父进程消息后父进程执行方法
+  workerMessage: function (msg, workers) {
+    qmonitor.add(msg, workers);
+  }
+};
+
+multiprocess.listen(app, opts);

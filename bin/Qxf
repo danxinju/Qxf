@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var command = require('../lib/command');
+var argv = process.argv;
+
+command(argv);
