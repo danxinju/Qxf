@@ -2,7 +2,7 @@
     "author": "song.chen <song.chen@qunar.com>",
     "name": "Qxf",
     "description": "FE Node display framework",
-    "version": "0.2.107",
+    "version": "1.0.0",
     "bin": "./bin/Qxf",
     "repository": {
         "type": "git",
