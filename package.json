@@ -1,0 +1,23 @@
+{
+    "author": "song.chen <song.chen@qunar.com>",
+    "name": "Qxf",
+    "description": "FE Node display framework",
+    "version": "0.2.107",
+    "bin": "./bin/Qxf",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/soncy/Qxf.git"
+    },
+    "dependencies": {
+        "fs-extra": "~0.18.3"
+    },
+    "devDependencies": {},
+    "optionalDependencies": {},
+    "engines": {
+        "coffee": "*"
+    },
+    "license": "MIT",
+    "scripts": {
+        "prepublish": "cake build"
+    }
+}
