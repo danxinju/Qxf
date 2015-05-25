@@ -13,12 +13,5 @@ module.exports = () ->
             console.error err
             return
 
-        child_process.exec('qnpm install', (error, stdout, stderr) ->
-            console.log "stdout: #{stdout}"
-            console.log "stderr: #{stderr}"
-            if error isnt null
-                console.log "exec error: #{error}"
-            else
-                console.log '初始化完成'
-        )
+        console.log '完成初始化，请使用qnpm install完成依赖安装'
     )

@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+#!/usr/bin/env coffee
 
-var command = require('../lib/command');
-var argv = process.argv;
+command = require '../src/command'
+argv = process.argv;
 
 command(argv);
